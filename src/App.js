@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import Menu from './Menu';
+import About from './About';
+import Gallery from './Gallery';
+import Contact from './Contact';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Hero />
+      <Menu />
+      <About />
+      <Gallery />
+      <Contact />
+      <Footer />
+
+      {/* WhatsApp Float Button */}
+      <a
+        href="https://wa.me/919999999999?text=Namaste! Mujhe Shree Sidhnath Sweets se order karna hai."
+        target="_blank"
+        rel="noreferrer"
+        className="whatsapp-float"
+        title="WhatsApp Par Order Karein"
+      >
+        💬
+      </a>
     </div>
   );
 }

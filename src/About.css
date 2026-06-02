@@ -1,0 +1,238 @@
+/* ========================
+   ABOUT SECTION
+   ======================== */
+
+.about-section {
+  padding: var(--section-padding);
+  background: var(--brown-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 10% 50%, rgba(201,151,44,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 90% 20%, rgba(255,107,26,0.05) 0%, transparent 50%);
+}
+
+.about-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-image-side {
+  position: relative;
+}
+
+.about-main-img {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  animation: borderGlow 3s ease-in-out infinite;
+}
+
+.about-main-img img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+.about-year-badge {
+  position: absolute;
+  bottom: 2rem;
+  right: -2rem;
+  background: var(--gradient-gold);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-gold);
+  animation: float 4s ease-in-out infinite;
+}
+
+.about-year {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--brown-dark);
+  display: block;
+  line-height: 1;
+}
+
+.about-year-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--brown-medium);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.about-dots {
+  position: absolute;
+  top: 2rem;
+  left: -2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.about-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(201,151,44,0.3);
+  display: block;
+}
+
+.about-dots span:nth-child(odd) {
+  background: rgba(201,151,44,0.5);
+}
+
+.about-content {
+  color: var(--white);
+}
+
+.about-section .section-badge {
+  background: rgba(201,151,44,0.2);
+  border: 1px solid rgba(201,151,44,0.3);
+  color: var(--gold-light);
+}
+
+.about-section .section-title {
+  color: var(--white);
+}
+
+.about-desc {
+  font-size: 1rem;
+  color: rgba(245,215,142,0.75);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(201,151,44,0.15);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  transition: all var(--transition-medium);
+}
+
+.highlight-item:hover {
+  background: rgba(201,151,44,0.1);
+  border-color: rgba(201,151,44,0.35);
+  transform: translateY(-3px);
+}
+
+.highlight-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.highlight-text strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 0.2rem;
+}
+
+.highlight-text span {
+  font-size: 0.78rem;
+  color: rgba(245,215,142,0.55);
+  line-height: 1.5;
+}
+
+.about-owners {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(201,151,44,0.15);
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+}
+
+.owner-avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--gradient-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-gold);
+}
+
+.owner-info strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.owner-info span {
+  font-size: 0.8rem;
+  color: rgba(245,215,142,0.55);
+}
+
+@media (max-width: 900px) {
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .about-year-badge {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.5rem;
+  }
+
+  .about-dots {
+    display: none;
+  }
+
+  .about-section .section-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-owners {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlight-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
