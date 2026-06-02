@@ -21,7 +21,7 @@ function App() {
 
       {/* WhatsApp Float Button */}
       <a
-        href="https://wa.me/919999999999?text=Namaste! Mujhe Shree Sidhnath Sweets se order karna hai."
+        href="https://wa.me/919759313914?text=Namaste! Mujhe Shree Sidhnath Sweets se order karna hai."
         target="_blank"
         rel="noreferrer"
         className="whatsapp-float"

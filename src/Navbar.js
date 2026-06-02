@@ -22,7 +22,7 @@ const Navbar = () => {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="navbar-inner">
           <div className="navbar-logo">
-            <div className="logo-icon">🪔</div>
+            <img src="/beautiful-sweets-logo_427757-206.avif" alt="Shree Sidhnath Logo" className="logo-icon-img" />
             <div className="logo-text">
               <span className="logo-name">Shree Sidhnath</span>
               <span className="logo-tagline">Sweets & Fast Food</span>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
           <button
             className="navbar-order-btn"
-            onClick={() => window.open('https://wa.me/919999999999', '_blank')}
+            onClick={() => window.open('https://wa.me/919759313914', '_blank')}
           >
             📞 Order Now
           </button>
@@ -65,7 +65,7 @@ const Navbar = () => {
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}>📍 Contact</a></li>
         </ul>
         <a
-          href="https://wa.me/919999999999"
+          href="https://wa.me/919759313914"
           target="_blank"
           rel="noreferrer"
           className="mobile-order-btn"

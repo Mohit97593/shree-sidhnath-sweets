@@ -267,3 +267,5 @@
     text-align: center;
   }
 }
+
+.logo-icon-img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; box-shadow: var(--shadow-gold); }

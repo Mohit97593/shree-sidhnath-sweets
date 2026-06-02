@@ -10,7 +10,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const msg = `Namaste! Main ${form.name} bol raha hoon.\nPhone: ${form.phone}\nOrder: ${form.order}\nMessage: ${form.message}`;
-    window.open(`https://wa.me/919999999999?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/919759313914?text=${encodeURIComponent(msg)}`, '_blank');
     setSubmitted(true);
   };
 
@@ -43,7 +43,7 @@ const Contact = () => {
               <div className="contact-card-body">
                 <h4>Phone / WhatsApp</h4>
                 <p>
-                  <a href="tel:+919999999999">+91 99999 99999</a><br />
+                  <a href="tel:+919759313914">+91 97593 13914</a><br />
                   <a href="tel:+918888888888">+91 88888 88888</a>
                 </p>
               </div>

@@ -22,14 +22,14 @@ const Footer = () => {
       {/* Festival Banner */}
       <div className="festival-banner">
         🎉 Festival Season Par Special Discounts! Shaadi & Puja Orders ke liye Call Karein:
-        <strong>+91 99999 99999</strong> 🎉
+        <strong>+91 97593 13914</strong> 🎉
       </div>
 
       <div className="footer-main">
         {/* Brand */}
         <div className="footer-brand">
           <div className="navbar-logo">
-            <div className="logo-icon">🪔</div>
+            <img src="/beautiful-sweets-logo_427757-206.avif" alt="Shree Sidhnath Logo" className="logo-icon-img" />
             <div className="logo-text">
               <span className="logo-name">Shree Sidhnath</span>
               <span className="logo-tagline" style={{ color: 'rgba(245,215,142,0.5)' }}>Sweets & Fast Food</span>
@@ -41,10 +41,10 @@ const Footer = () => {
             Yahi hamaari pehchaan hai. 🙏
           </p>
           <div className="footer-social">
-            <a href="https://wa.me/919999999999" className="social-btn" target="_blank" rel="noreferrer" title="WhatsApp">💬</a>
+            <a href="https://wa.me/919759313914" className="social-btn" target="_blank" rel="noreferrer" title="WhatsApp">💬</a>
             <a href="#!" className="social-btn" title="Facebook">📘</a>
             <a href="#!" className="social-btn" title="Instagram">📸</a>
-            <a href="tel:+919999999999" className="social-btn" title="Call">📞</a>
+            <a href="tel:+919759313914" className="social-btn" title="Call">📞</a>
           </div>
         </div>
 
@@ -84,11 +84,11 @@ const Footer = () => {
             </li>
             <li>
               <span>📞</span>
-              <a href="tel:+919999999999">+91 99999 99999</a>
+              <a href="tel:+919759313914">+91 97593 13914</a>
             </li>
             <li>
               <span>💬</span>
-              <a href="https://wa.me/919999999999" target="_blank" rel="noreferrer">WhatsApp Order</a>
+              <a href="https://wa.me/919759313914" target="_blank" rel="noreferrer">WhatsApp Order</a>
             </li>
             <li>
               <span>🕐</span>

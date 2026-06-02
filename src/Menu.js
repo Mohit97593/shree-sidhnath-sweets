@@ -184,7 +184,7 @@ const Menu = () => {
                     </div>
                     <button
                       className="menu-card-order"
-                      onClick={() => window.open(`https://wa.me/919999999999?text=Hello! ${item.name} ke baare mein order karna chahta hoon.`, '_blank')}
+                      onClick={() => window.open(`https://wa.me/919759313914?text=Hello! ${item.name} ke baare mein order karna chahta hoon.`, '_blank')}
                     >
                       Order Now
                     </button>
@@ -199,7 +199,7 @@ const Menu = () => {
           <p>📞 More items ke liye humse directly contact karein</p>
           <button
             className="btn-primary"
-            onClick={() => window.open('https://wa.me/919999999999', '_blank')}
+            onClick={() => window.open('https://wa.me/919759313914', '_blank')}
           >
             💬 WhatsApp Par Order Karein
           </button>

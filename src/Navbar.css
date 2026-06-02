@@ -196,3 +196,5 @@
     display: flex;
   }
 }
+
+.logo-icon-img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; box-shadow: var(--shadow-gold); animation: sparkle 2s ease-in-out infinite; }
